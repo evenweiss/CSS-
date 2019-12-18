@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #333;
+}
+
+a {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: sans-serif;
+  background: linear-gradient(90deg, #27ae60, #2980b9, #e67e22, #9b59b6, #27ae60);
+  background-size: 400%;
+  border-radius: 30px;
+  z-index: 1;
+}
+a:hover {
+  animation: btnanimation 8s linear infinite;
+}
+
+@keyframes btnanimation {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+a::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  bottom: -5px;
+  right: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #27ae60, #2980b9, #e67e22, #9b59b6, #27ae60);
+  background-size: 400%;
+  border-radius: 40px;
+  opacity: 0;
+  transition: .56s;
+}
+a:hover::before {
+  filter: blur(20px);
+  opacity: 1;
+  animation: btnanimation 8s linear infinite;
+}
