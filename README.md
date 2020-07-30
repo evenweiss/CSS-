@@ -1,3 +1,2 @@
-# exercise-css-effect
-
-CSS 特效练习
+# exercise-folder
+*this folder is used to store some project exercises*
