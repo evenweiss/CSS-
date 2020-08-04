@@ -1,2 +1,4 @@
-# exercise-folder
-*this folder is used to store some project exercises*
+## effects-folder
+
+***This reposity is used to store some special effects achieved by css and js***.
+
